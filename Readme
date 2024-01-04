@@ -1,0 +1,5 @@
+Abre una terminal y posicionate en la carpeta raiz
+
+Ejecuta source bin/activate para activar el ambiente 
+
+V ersion de python 3.8 librosa no esta soportada en versiones mas recientes
