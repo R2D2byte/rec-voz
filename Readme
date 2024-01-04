@@ -2,4 +2,11 @@ Abre una terminal y posicionate en la carpeta raiz
 
 Ejecuta source bin/activate para activar el ambiente 
 
-V ersion de python 3.8 librosa no esta soportada en versiones mas recientes
+Version de python 3.8 librosa no esta soportada en versiones mas recientes
+
+Ejecuta --- > pip3.8 install -r requeriments.txt
+
+
+Nota: Debes tener python 3.8 instalado
+
+Confirmar version de python --- > python3.8 --version
