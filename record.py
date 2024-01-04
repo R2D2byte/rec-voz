@@ -22,4 +22,4 @@ def record_voice():
     print(f'Please Read de folowing message ... \n')
     grabar_audio(file_name,5)
     print(f"Audio recorded and saved in {file_name} \n")
-    return file_name
+    return file_name, name.lower()
