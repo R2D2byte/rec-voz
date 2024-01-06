@@ -15,7 +15,8 @@ def buildDataframe(mfccs,chroma,mel,contrast,tonnetz,label):
 
     for value in tonnetz:
         dataset.append(value)
-
     dataset.append(mel)
-    dataset.append(label)
+
+    if label:
+        dataset.append(label)
     return dataset
