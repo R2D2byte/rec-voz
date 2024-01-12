@@ -13,7 +13,7 @@ def grabar_audio(file_name, duration, sample_rate=44100, channels=1, format=pyau
                     frames_per_buffer=1024)
 
     print("Recording... \n ")
-    print(f"\t {randomText[random.randint(0, 9)]} \n")
+    print(f"\t La única manera de hacer un gran trabajo es amar lo que haces. \n")
     frames = []
     for i in range(int(sample_rate / 1024 * duration)):
         data = stream.read(1024)

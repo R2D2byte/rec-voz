@@ -19,6 +19,7 @@ def record_voice():
 
 loaded_model = joblib.load('modelo_knn.joblib')
 scaler = joblib.load('scaler.joblib')
+modelo_pca = joblib.load('modelo_pca.pkl')
 
 file_name = record_voice()
 #OBTENEMOS LAS CARACTERISTICAS 
@@ -27,7 +28,9 @@ X_new = buildDataframe(mfccs,chroma,mel,contrast,tonnetz,False)
 
 X_new_normalized = scaler.transform([X_new])
 
-predictions = loaded_model.predict(X_new_normalized)
+x_pca = modelo_pca.transform(X_new_normalized)
+
+predictions = loaded_model.predict(x_pca)
 
 # Imprimir las predicciones
 print("Predicciones:", predictions)
