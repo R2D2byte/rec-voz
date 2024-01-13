@@ -1,0 +1,19 @@
+INTRODUCCIÓN
+La inteligencia artificial y el aprendizaje automático han revolucionado la forma en que interactuamos con la tecnología, particularmente en el campo del procesamiento del lenguaje natural y el reconocimiento de voz. Este proyecto tienec un enfoque específico en el reconocimiento del hablante, una rama del reconocimiento de voz que no solo interpreta el contenido verbal, sino que también identifica al individuo que habla.
+
+El objetivo es presentar un modelo capaz de reconocer al hablante con precisión y eficiencia. Utilizando técnicas avanzadas como la extracción de características de voz, la reducción de dimensionalidad mediante PCA y la clasificación mediante KNN, el proyecto busca superar los desafíos comunes en el reconocimiento de voz, como la variabilidad en la pronunciación, el acento y las condiciones acústicas. Con estos avances, el proyecto apunta a contribuir significativamente al campo del reconocimiento de voz y al procesamiento del lenguaje natural.
+
+DESARROLLO
+
+
+La funcionalidad teórica del reconocimiento de voz en este proyecto se basa en algoritmos avanzados para identificar y analizar características únicas en la voz humana. Este proceso se realiza en varias etapas:
+
+Extracción de Características (archivo extractFeatures.py): Aquí se extraen características vocales como tono, intensidad, y timbre. Esta etapa es fundamental porque las características extraídas son la base para el reconocimiento del hablante.
+
+Reducción de Dimensionalidad con PCA: Esta técnica estadística reduce la complejidad de los datos (de 66 a 11 dimensiones en este caso), preservando la mayor cantidad de información original. La reducción de dimensiones mejora la eficiencia computacional y la precisión del modelo, minimizando también el riesgo de sobreajuste.
+
+Clasificación con KNN (K-Nearest Neighbors): Este algoritmo supervisado clasifica nuevos datos según su similitud con datos de entrenamiento. Utilizando un número dinámico de vecinos, el modelo se adapta de manera más efectiva a la variabilidad inherente en los datos de voz, lo que es crucial para el reconocimiento preciso del hablante.
+
+CONCLUSIÓN
+
+En este proyecto de reconocimiento de voz, el uso del algoritmo K-Nearest Neighbors (KNN) resultó ser una elección eficaz. Su aplicación complementó perfectamente la extracción de características y el tratamiento de datos mediante PCA, contribuyendo significativamente a la precisión y eficiencia del sistema de reconocimiento del hablante. La adaptabilidad del KNN a la variabilidad en los datos de voz demostró ser esencial para lograr un reconocimiento preciso, haciendo de su inclusión un componente clave en el éxito del proyecto
